@@ -7,12 +7,20 @@
 $blue: #4183C4;
 
 // Grays
+/*
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+*/
+$black: #fff;
+$darkerGray: #eee;
+$darkGray: rgb(231, 231, 231);
+$gray: rgb(177, 175, 175); // #333
+$lightGray: rgb(71, 70, 70); // #222
+$white: rgb(29, 28, 28); // #000
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
