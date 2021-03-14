@@ -8,6 +8,8 @@ permalink: /about/
 
 He is experienced in finding business opportunities for machine learning to make significant impact. Once an opportunity is identified, he designs, builds, and implements solutions that create discrete business value. 
 
+---
+
 ## **Experience**
 
 ### *Data Science*
