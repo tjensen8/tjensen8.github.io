@@ -59,6 +59,7 @@ Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scor
 
 
 **Table 1**. Top TF-IDF Words
+
 |   index   |            words            |   tf-idf score  |
 |:---------:|:---------------------------:|:---------------:|
 |      0    |           compounds         |      2421.93    |
