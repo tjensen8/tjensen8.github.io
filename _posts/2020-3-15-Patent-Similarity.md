@@ -61,7 +61,7 @@ Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scor
 **Table 1**. Top TF-IDF Words
 
 |   index   |            words            |   tf-idf score  |
-|:---------:|:---------------------------:|:---------------:|
+|---------|---------------------------|---------------|
 |      0    |           compounds         |      2421.93    |
 |      1    |           invention         |     2268.617    |
 |      2    |            formula          |     1750.843    |
@@ -102,6 +102,7 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 <div align="center">
 
 **Figure 5.** Word2Vec/K-Means Cluster Results
+
 |     Cluster    |     Count   of the company Patent in Cluster    |
 |:--------------:|:-------------------------------------------:|
 |        0       |                       9                     |
