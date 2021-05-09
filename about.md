@@ -61,5 +61,5 @@ Taylor has a diverse background that spans multiple ares of business including o
 ## **Contact me**
 LinkedIn: [Taylor Jensen](https://www.linkedin.com/in/taylor-jensen-02999/)
 
-Email: [taylor-jensen@outlook.com](mailto:taylor-jensen@outlook.com)
+Email: [tjdatabusiness@outlook.com](mailto:tjdatabusiness@outlook.com)
 
