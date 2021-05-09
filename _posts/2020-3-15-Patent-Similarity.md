@@ -60,6 +60,8 @@ Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scor
 
 **Table 1**. Top TF-IDF Words
 
+<div class="datatable-begin"></div>
+
 |   index   |            words            |   tf-idf score  |
 |---------|---------------------------|---------------|
 |      0    |           compounds         |      2421.93    |
@@ -88,7 +90,7 @@ Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scor
 |     23    |            wherein          |     892.2472    |
 |     24    |     invention   provides    |     878.1491    |
 
-
+<div class="datatable-end"></div>
 
 After the embeddings of the words were learned, a custom function was utilized in order to turn each sentence into a Word2Vec representative vector. The function summarizes the meaning of the words in the context of the abstract. Once the abstract-representative vectors were obtained for the corpus, the documents are ready to be clustered based on similarity. To perform the clustering, the K-Means algorithm was utilized with 8 clusters and performed updates to the centroid locations 500 times while training. After clustering, work began to create a visual representation of the documents in a 2D graph, which required dimensionality reduction from hundreds of dimensions. I utilized Multidimensional scaling (MDS) to reduce the dimensions while maintaining as much of a representation of the data as possible. An interesting twist to the process of analysis was that the cosine similarity could not be calculated in whole, as the dot product of combining the matrix together utilized too much memory. In order to correct for this, I utilized a custom function that calculates the cosine similarity in chunks (Sal, 2016).  Then, in order to capitalize on the efficiency gained from transforming the document space to much lower dimension, I calculated the distance of a sample of the company documents to the closest non-the company document in order to see if the closest documents were somewhat related to the the company documents.
 
