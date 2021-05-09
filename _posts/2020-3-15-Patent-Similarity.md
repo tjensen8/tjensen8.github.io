@@ -20,17 +20,15 @@ Previous work shows that using machine learning to interact with patent data is 
 
 The corpus of “abstracts” consists of patent data owned by the United States Patent and Trademark Office (USPTO). The Patents View database contains this information and makes it available for bulk download (Office of Chief Economist, USTPO, 2020). One can download the specific tables containing the desired information. In this case, the abstract data contained millions of lines of text data, each focused on a patent. Each patent also had additional related metadata. In order to capture relationships between the data and patents, I created an ontology shown in Figure 1.
 
-<div align="center">
 
 **Figure 1**. Ontology of Patent Data
 
 ![Figure 1](/images/patent-similarity-figure1.png "Figure 1")
 
-</div>
 
 The initial dataset was over 60GB. This caused an interesting problem, as local resources and streaming were not enough to compile and analyze all the patents efficiently. A visualization of the distribution of the top 10 classification categories is shown in Figure 2 with the top frequent CPC subgroups for the company in Figure 3. As you can see from the visual, the top 3 categories contain over 2.5 million classifications. To compound the matter, each patent can be assigned multiple CPC classifications. In order to bring the data into a more manageable state, I pulled in the CPC classifications that only concern the company. A visualization of the top 10 most frequent CPC subsection classifications are shown in Figure 2 below. After initial testing, the dataset for analysis needed to be restricted further to one classification, Organic Chemistry, which was the company’s highest assigned subgroup, as seen in Figure 3. This additional restriction was necessary to enable and reduce processing time on the local computer as well as increase the quality of the results by getting rid of patents that would obviously have nothing to do with the company’s patents (like children’s swing set designs). In addition, this would help focus model vocabulary to words that would distinguish differences between chemical patents at a more granular level, which can be technical in nature. A sample of a patent abstract is shown in Figure 4 below.
 
-<div align="center">
+
 
 **Figure 2**. Overall Top 10 CPC Patent Classification Categories
 
@@ -49,7 +47,7 @@ The initial dataset was over 60GB. This caused an interesting problem, as local 
 
 **Figure 4**. Sample of Patent Abstract
 
-</div>
+
 
 > "This document describes biochemical pathways for producing 2-aminopimelate from 2,6-diaminopimelate, and methods for converting 2-aminopimelate to one or more of adipic acid, adipate semialdehyde, caprolactam, 6-aminohexanoic acid, 6-hexanoic acid, hexamethylenediamine, or 1,6-hexanediol by decarboxylating 2-aminopimelate into a six carbon chain aliphatic backbone and enzymatically forming one or two terminal functional groups, comprised of carboxyl, amine or hydroxyl group, in the backbone.”
 
@@ -58,7 +56,7 @@ The initial dataset was over 60GB. This caused an interesting problem, as local 
 
 Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scores. However, this did not prove as fruitful as I had hoped, as the resulting words identified were too-high level (i.e “ligand”) and were not as representative of the abstracts. The top 25 TF-IDF scores for the company patents and the corpus in Table 1, in the appendix. In order to capture more information about the words, I used Word2Vec in order to help capture the semantic meaning of the words. Word2Vec was selected because of the ability to contextualize individual words. This is a good fit as the abstracts are small at 3 or 4 sentences. In addition, many of the abstracts contain words that would be key in identifying similar applications, such as a chemical name. In this analysis, I experimented both large and a small sized embedding at 100 and 400 words, respectively. I also utilized a window of 5 words across the different texts. 
 
-<div align="center">
+
 
 **Table 1**. Top TF-IDF Words
 |   index   |            words            |   tf-idf score  |
@@ -89,7 +87,7 @@ Initially, I used a TF-IDF matrix to identify words that had the top TF-IDF scor
 |     23    |            wherein          |     892.2472    |
 |     24    |     invention   provides    |     878.1491    |
 
-</div>
+
 
 After the embeddings of the words were learned, a custom function was utilized in order to turn each sentence into a Word2Vec representative vector. The function summarizes the meaning of the words in the context of the abstract. Once the abstract-representative vectors were obtained for the corpus, the documents are ready to be clustered based on similarity. To perform the clustering, the K-Means algorithm was utilized with 8 clusters and performed updates to the centroid locations 500 times while training. After clustering, work began to create a visual representation of the documents in a 2D graph, which required dimensionality reduction from hundreds of dimensions. I utilized Multidimensional scaling (MDS) to reduce the dimensions while maintaining as much of a representation of the data as possible. An interesting twist to the process of analysis was that the cosine similarity could not be calculated in whole, as the dot product of combining the matrix together utilized too much memory. In order to correct for this, I utilized a custom function that calculates the cosine similarity in chunks (Sal, 2016).  Then, in order to capitalize on the efficiency gained from transforming the document space to much lower dimension, I calculated the distance of a sample of the company documents to the closest non-the company document in order to see if the closest documents were somewhat related to the the company documents.
 
