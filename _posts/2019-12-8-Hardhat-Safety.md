@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hard Hat Detection in Images
+title: Paper - Hard Hat Detection in Images
 ---
 
 

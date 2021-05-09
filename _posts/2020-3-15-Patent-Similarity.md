@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Patent Clustering Experiment & Analysis 
+title: Paper - Patent Clustering Experiment & Analysis 
 ---
 
 
