@@ -8,7 +8,7 @@ permalink: /about/
 
 Taylor Jensen currently works in the dynamic role of Analytics Transformation Leader at INVISTA. He is currently enrolled at Northwestern University and will obtain a Master of Science in Data Science with a focus in Artificial Intelligence in July 2021. 
 
-He is experienced in finding business opportunities for machine learning to make significant impact. Once an opportunity is identified, he designs, builds, and implements solutions that create discrete business value. 
+He is experienced in finding opportunities for machine learning to make significant impact. Once an opportunity is identified, he designs, builds, and implements solutions that create discrete value. 
 
 ---
 
@@ -40,6 +40,8 @@ Taylor has experience in developing, implementing, and managing a diverse set of
 
 These technology platforms include:
 
+- Streamlit
+- Docker
 - AWS
 - Salesforce
   - Managed and developed global procurement instance
