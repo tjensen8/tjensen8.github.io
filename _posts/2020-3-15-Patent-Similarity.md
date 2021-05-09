@@ -158,19 +158,19 @@ In the case of the LDA topic modeling, the results were more high-level but easi
 
 Topic: 0 
 
-> Words: 0.029*"catalyst" + 0.021*"material" + 0.016*"process" + 0.010*"invention" + 0.010*"catalysts" + 0.010*"materials" + 0.009*"high" + 0.009*"present" + 0.009*"organic" + 0.008*"conversion"
+> Topic Word Decomposition: 0.029*"catalyst" + 0.021*"material" + 0.016*"process" + 0.010*"invention" + 0.010*"catalysts" + 0.010*"materials" + 0.009*"high" + 0.009*"present" + 0.009*"organic" + 0.008*"conversion"
 
 Topic: 4 
 
-> Words: 0.046*"invention" + 0.033*"present" + 0.033*"treatment" + 0.032*"diseases" + 0.030*"relates" + 0.018*"use" + 0.017*"disorders" + 0.016*"compounds" + 0.012*"novel" + 0.011*"methods"
+> Topic Word Decomposition: 0.046*"invention" + 0.033*"present" + 0.033*"treatment" + 0.032*"diseases" + 0.030*"relates" + 0.018*"use" + 0.017*"disorders" + 0.016*"compounds" + 0.012*"novel" + 0.011*"methods"
 
 Topic: 5 
 
-> Words: 0.039*"peptide" + 0.022*"peptides" + 0.022*"invention" + 0.021*"amino" + 0.020*"acid" + 0.011*"present" + 0.010*"conjugates" + 0.009*"methods" + 0.009*"comprising" + 0.009*"method"
+> Topic Word Decomposition: 0.039*"peptide" + 0.022*"peptides" + 0.022*"invention" + 0.021*"amino" + 0.020*"acid" + 0.011*"present" + 0.010*"conjugates" + 0.009*"methods" + 0.009*"comprising" + 0.009*"method"
 
 Topic: 6 
 
-> Words: 0.020*"polymer" + 0.017*"composition" + 0.017*"compound" + 0.010*"method" + 0.009*"provided" + 0.008*"invention" + 0.008*"polymers" + 0.008*"resin" + 0.008*"material" + 0.007*"also"
+> Topic Word Decomposition: 0.020*"polymer" + 0.017*"composition" + 0.017*"compound" + 0.010*"method" + 0.009*"provided" + 0.008*"invention" + 0.008*"polymers" + 0.008*"resin" + 0.008*"material" + 0.007*"also"
 
 
 
