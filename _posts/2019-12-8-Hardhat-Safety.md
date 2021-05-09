@@ -36,14 +36,14 @@ There are several networks tested on this dataset in order to capture the effect
 
 Utilizing the model structures in the previous section, I was able to recall about 90% of the heads in the test dataset. However, overfitting was a concern. Almost all models fit better on the training data than the test data. Dropout of 50% was utilized during training to remedy, with varying results. When dropout is applied, the models are typically not able to capture as many of the images containing heads. However, as more layers are added, the capture rate of heads in the test dataset increased. It is interesting to note that while most models were able to classify some of the images that contained a head, the models with more than 2 layers were able typically able to capture more of the head instances. However, when one looks at a sample of activation heatmaps from each of the models, the models are tending to capture the changes in the environment from images to images (like an industrial site vs an office), rather than the hardhats themselves. A sample of the outputs from the best convolutional network is in Figure 2, below. However, the model trained with Faster-RCNN-Inception-V2 model was trained using guidance from a bound box outline of the heads and hardhats, so it has the benefit of being told specifically what size, color, and position of hardhats are possible. A sample of outputs from the Faster-RCNN-Inception-V2 model is in Figure 3 below. The Convolutional network models were able to capture from 70% to 95% of the heads in the test set. While the average precision of the Faster-RCNN-Inception-V2 model was about to capture 84% of the heads and 57.5% of hardhats in the images, with an average mean precision of 71%. CNNs also took only minutes to train, while the Faster-RCNN model took hours. A summary of performance is in Table 1.
 
-![Table 1](/images/hardhat-table1.png)
+![Table 1](/images/hardhat-table1.png "Table 1")
 
 
-![Figure 2](/images/hardhat-figure2.png)
+![Figure 2](/images/hardhat-figure2.png "Figure 2")
 
 **Figure 3.** Sample output from object detection model Faster-RCNN-Inception-V2
 
-![Figure 3](/images/hardhat-figure3.png)
+![Figure 3](/images/hardhat-figure3.png "Figure 3")
 
 ## Additional Experiences
 
