@@ -99,7 +99,7 @@ In addition to the work performed above, Latent Dirichlet Allocation (LDA) model
 
 The results of both the Word2Vec/K-Means analysis and the LDA topic modeling were done with a manual review in order to judge the quality of the clustering algorithm. For the Word2Vec/K-Means analysis, most of the patents were focused around a particular cluster. The cluster groupings of the the company patents are in Figure 5 below. However, when evaluating the results of the cluster, regardless of the change in the size of the word embeddings, the quality of the matches was sub-par. An example of an the company patent against the closest match from both word embedding sizes is in Figure 6 below. In Figure 5, we can see that the closest matching records do not, in fact, relate to the original the company patent. The the company patent speaks to the creation of Paraxylene (an industrial chemical) from a parent chemical and the two sample matches relate to a salt used in treating diseases in the body and a fluid delivery mechanism. 
 
-<div align="center">
+
 
 **Figure 5.** Word2Vec/K-Means Cluster Results
 
@@ -115,10 +115,7 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 |        6       |                      51                     |
 |        7       |                      12                     |
 
-</div>
-<br>
 
-<div align="center">
 
 **Figure 6.** Word2Vec/K-Means matching result of a Chemical Company Patent
 
@@ -154,7 +151,7 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 In the case of the LDA topic modeling, the results were more high-level but easier to identify and segment what kinds of documents to expect. The 25-topic model produced an acceptable level of specificity in topics, while the 15-topic model was too general and captured only chemicals for medical uses (which doesn’t pertain to the company). This result is better than the Word2Vec/K-Means analysis as we do not immediately match individual documents, but rather browse documents that relate most to key words in the topics that we are interested in. For example, in Figure 7, we can see the results of the topics and where the the company patents fall. For example, topic number 21 contains the most the company patents and the topic most directly pertains to the company’s core business. That is, the processing of acids to achieve a reaction and produce a mixture of chemicals for nylon production. 
 
 
-<div align="center"> **Figure 7.** LDA 25-Topic Modeling Results, Sample of Topics 
+
 
 ![Figure 7](/images/patent-similarity-figure8.png "Figure 7") 
 
@@ -163,23 +160,25 @@ In the case of the LDA topic modeling, the results were more high-level but easi
 
 Topic: 0 
 
+
 > Topic Word Decomposition: 0.029*"catalyst" + 0.021*"material" + 0.016*"process" + 0.010*"invention" + 0.010*"catalysts" + 0.010*"materials" + 0.009*"high" + 0.009*"present" + 0.009*"organic" + 0.008*"conversion"
 
 Topic: 4 
+
 
 > Topic Word Decomposition: 0.046*"invention" + 0.033*"present" + 0.033*"treatment" + 0.032*"diseases" + 0.030*"relates" + 0.018*"use" + 0.017*"disorders" + 0.016*"compounds" + 0.012*"novel" + 0.011*"methods"
 
 Topic: 5 
 
+
 > Topic Word Decomposition: 0.039*"peptide" + 0.022*"peptides" + 0.022*"invention" + 0.021*"amino" + 0.020*"acid" + 0.011*"present" + 0.010*"conjugates" + 0.009*"methods" + 0.009*"comprising" + 0.009*"method"
 
 Topic: 6 
 
+
 > Topic Word Decomposition: 0.020*"polymer" + 0.017*"composition" + 0.017*"compound" + 0.010*"method" + 0.009*"provided" + 0.008*"invention" + 0.008*"polymers" + 0.008*"resin" + 0.008*"material" + 0.007*"also"
 
 
-
-</div>
 
 
 ## Analysis & Improvements
