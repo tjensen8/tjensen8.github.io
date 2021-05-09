@@ -23,6 +23,7 @@ The corpus of “abstracts” consists of patent data owned by the United States
 <div align="center">
 
 **Figure 1**. Ontology of Patent Data
+
 ![Figure 1](/images/patent-similarity-figure1.png "Figure 1")
 
 </div>
