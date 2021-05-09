@@ -4,7 +4,7 @@ title: Patent Clustering Experiment & Analysis
 ---
 
 
-> A summary of my research to develope a model identify similar patents to that owned by a chemical company. The goal of this experiment is to find a way to improve strategic business decision making  
+> A summary of my research to develope a model identify similar patents to that owned by a chemical company. The goal of this experiment is to find a way to improve strategic business decision making and company defense. 
 
 ## Introduction & Problem Statement 
 
