@@ -144,7 +144,7 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 > Title: Pyrimidine derivatives as CFTR modulators
 
 >Abstract: A compound having the structure of Formula II, or a stereoisomer, tautomer, or a pharmaceutically acceptable salt thereof:The compound is useful as CFTR modulator. Further, a method of using the compound and pharmaceutical composition comprising the compound are provided for treating diseases in lungs, pancreas, gastrointestinal system, sinuses, reproductive system, and the sweat glands.
-</div>
+
 
 
 
