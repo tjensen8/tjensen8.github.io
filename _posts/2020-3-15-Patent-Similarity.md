@@ -103,8 +103,9 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 
 **Figure 5.** Word2Vec/K-Means Cluster Results
 
+
 |     Cluster    |     Count   of the company Patent in Cluster    |
-|:--------------:|:-------------------------------------------:|
+|--------------|-------------------------------------------|
 |        0       |                       9                     |
 |        1       |                      180                    |
 |        2       |                      85                     |
@@ -120,6 +121,7 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 <div align="center">
 
 **Figure 6.** Word2Vec/K-Means matching result of a Chemical Company Patent
+
 
 ***Selected Patent:***
 
@@ -137,6 +139,9 @@ The results of both the Word2Vec/K-Means analysis and the LDA topic modeling wer
 
 <br>
 <br>
+
+
+
 ***Closest Matching Patent:***
 
 > Title: Pyrimidine derivatives as CFTR modulators
