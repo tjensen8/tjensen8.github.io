@@ -22,7 +22,7 @@ Safety is of chief concern in many industries, and there have been experiments d
 
 A public domain dataset through Harvard’s Dataverse was utilized during testing. The dataset contains train/test split images of people with hardhats and without hard hats (Liangbin, 2019) The dataset contains approximately 7,000 images and will be helpful for testing and training the model. Some of the images vary in depth and number of hardhats in the image. The image annotations are provided in .xml format and contain bound boxes of labeled classes “head” and “hardhat”. A “head” is a person’s head without a hardhat. A “hardhat” is a person’s head with a hardhat on. Example images from the training corpus are in the appendix in Figure 1.
 
-![Figure 1](/images/hardhat-figure1.png "Figure 1")
+![Figure 1](/images/hardhat-figure1.PNG "Figure 1")
 
 ### Preprocessing
 During the testing process, there were two distinct types of inputs and tests of the model. The first test is a binary test to identify if the image contains a hardhat or not. The second test is to use bound box identification to drive model learning. To run the tests, two different preprocessing methods were utilized. For the binary test, images were converted into tensors of shape (height, width, channels). The dataset was also balanced so there were equal amounts of images with and without a hardhat. For the bound box model, the .xml files that contain the bound boxes are converted into .csv that contains the image, class, and location of the bound box in each image. The .csv files are fed into the model in order to identify and train on each bound box. The images are fed into the model and preprocessed as a part of the Faster-RCNN-Inception-V2 model (Google, Inc, 2017).
