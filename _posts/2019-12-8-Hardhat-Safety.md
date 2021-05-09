@@ -4,7 +4,7 @@ title: Hard Hat Detection in Images
 ---
 
 
-# Safety & Visual Networks: Hardhat Detection in Images
+Safety & Visual Networks
 > A summary of my research to develope a model to detect if hardhats are being worn. The goal of this is to improve safety and reduce injuries in industrial work areas using machine learning.
 
 ## Introduction
