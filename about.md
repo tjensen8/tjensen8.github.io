@@ -30,7 +30,7 @@ Taylor has experience in many data science application spaces including:
 - Simulation
 - Optimization
 - Segmentation
-- Linquistic Modeling
+- Linguistic Modeling
 
 ### *Technology*
 > The complexity of the solution must match the complexity of the problem.
