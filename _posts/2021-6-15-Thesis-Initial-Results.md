@@ -3,8 +3,6 @@ layout: post
 title: A visual overview of modeling results on the surface of Bennu.
 ---
 
-## Overview
-
 As my thesis is in the process of being approved, I thought it would be good to show some of the results from the modeling process. A more comprehensive executive summary will follow once the thesis is fully approved. Two model architectures are tested over the entirety of the surface of the asteroid Bennu. The architectures tested include Unet of Ronneberger, Fischer, and Brox (https://arxiv.org/abs/1505.04597) and a custom architecture named "Y Model, High Granularity" (YMHG) developed specifically for this thesis. 
 
 <b> Figure 14 From Thesis: Visual Comparison of Unet vs Y Model High Granularity (YMHG) </b>
